@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Ojha — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Lucide icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AO<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects"class="nav-link">Projects</a></li>
+        <li><a href="#resume"  class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Dark mode toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i data-lucide="sun"  class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about"    class="mob-link">About</a></li>
+      <li><a href="#skills"   class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#resume"   class="mob-link">Resume</a></li>
+      <li><a href="#contact"  class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-content">
+      <!-- Avatar -->
+      <div class="hero-avatar reveal">
+        <div class="avatar-ring">
+          <div class="avatar-placeholder">
+            <span>AO</span>
+          </div>
+        </div>
+        <div class="status-badge">
+          <span class="pulse"></span> Open to Opportunities
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <p class="hero-greeting reveal delay-1">👋 Hey there, I'm</p>
+        <h1 class="hero-name reveal delay-2">Aryan<br><span class="accent">Ojha</span></h1>
+        <p class="hero-role reveal delay-3">B.Tech Student &nbsp;·&nbsp; Aspiring Software Developer</p>
+        <p class="hero-intro reveal delay-4">
+          I'm a passionate CS student from India on a mission to master
+          <strong>Data Structures &amp; Algorithms</strong> and build things that matter.
+          Currently sharpening my craft in <strong>Python</strong> &amp; <strong>Java</strong>
+          — one problem at a time.
+        </p>
+        <div class="hero-cta reveal delay-5">
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <i data-lucide="download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="mail"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i data-lucide="chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal">Who I Am</div>
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+
+      <div class="about-grid">
+        <!-- Text column -->
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Aryan Ojha</strong>, a B.Tech student based in India with a relentless curiosity for
+            how things work under the hood. My journey into tech started with a simple question —
+            <em>"How does this code actually run?"</em> — and I've been hooked ever since.
+          </p>
+          <p>
+            My current focus is on building a solid foundation in <strong>Data Structures &amp; Algorithms</strong>,
+            because I believe great software is built on great fundamentals. I write code in
+            <strong>Python</strong> (my daily driver) and <strong>Java</strong> (my analytical sidekick),
+            and I love the moments when a tricky problem finally clicks.
+          </p>
+          <p>
+            Beyond code, I'm driven by the idea that technology can solve real problems.
+            I'm actively building projects, participating in online communities, and working
+            toward a career in software development where I can make a meaningful impact.
+          </p>
+
+          <!-- Quick facts -->
+          <div class="quick-facts">
+            <div class="fact">
+              <i data-lucide="map-pin"></i>
+              <span>India</span>
+            </div>
+            <div class="fact">
+              <i data-lucide="graduation-cap"></i>
+              <span>B.Tech (CS)</span>
+            </div>
+            <div class="fact">
+              <i data-lucide="target"></i>
+              <span>DSA &amp; Problem Solving</span>
+            </div>
+            <div class="fact">
+              <i data-lucide="coffee"></i>
+              <span>Runs on chai ☕</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats column -->
+        <div class="about-stats reveal delay-2">
+          <div class="stat-card">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">DSA Problems Solved</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Languages Proficient</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">What I Know</div>
+      <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+      <p class="section-sub reveal">A snapshot of the tools and concepts I've been working with.</p>
+
+      <!-- Category: Languages -->
+      <div class="skills-category reveal">
+        <h3 class="category-title">Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--py)">🐍</div>
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--java)">☕</div>
+            <span class="skill-name">Java</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--html)">🌐</div>
+            <span class="skill-name">HTML/CSS</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--js)">⚡</div>
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category: Core Concepts -->
+      <div class="skills-category reveal delay-2">
+        <h3 class="category-title">Core Concepts</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--dsa)">🧩</div>
+            <span class="skill-name">Data Structures</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--algo)">⚙️</div>
+            <span class="skill-name">Algorithms</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--oop)">🏗️</div>
+            <span class="skill-name">OOP</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:var(--git)">🔧</div>
+            <span class="skill-name">Git &amp; GitHub</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">What I've Built</div>
+      <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal">A few things I've worked on — more on my GitHub.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card reveal">
+          <div class="project-img" style="background: linear-gradient(135deg,#6366f1,#a78bfa)">
+            <span class="project-emoji">🧮</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">DSA</span>
+            </div>
+            <h3 class="project-title">DSA Visualizer</h3>
+            <p class="project-desc">
+              An interactive tool that visually demonstrates common data structures and algorithms — 
+              sorting, trees, graphs — step by step, helping learners understand the "why" behind the code.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card reveal delay-1">
+          <div class="project-img" style="background: linear-gradient(135deg,#f59e0b,#fcd34d)">
+            <span class="project-emoji">📚</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CLI</span>
+            </div>
+            <h3 class="project-title">Study Planner CLI</h3>
+            <p class="project-desc">
+              A command-line productivity tool built in Python that helps students schedule their study 
+              sessions, track progress, and set reminders — all from the terminal.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card reveal delay-2">
+          <div class="project-img" style="background: linear-gradient(135deg,#10b981,#6ee7b7)">
+            <span class="project-emoji">🏦</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+            </div>
+            <h3 class="project-title">Bank Management System</h3>
+            <p class="project-desc">
+              A console-based banking system in Java demonstrating core OOP principles — inheritance, 
+              encapsulation, and polymorphism — with account management and transaction history.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card reveal delay-3">
+          <div class="project-img" style="background: linear-gradient(135deg,#ef4444,#fca5a5)">
+            <span class="project-emoji">🌐</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-desc">
+              This very website! Built from scratch with pure HTML, CSS, and vanilla JavaScript — 
+              featuring dark mode, smooth animations, and a fully responsive layout.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RESUME
+  ═══════════════════════════════════════════ -->
+  <section class="section resume" id="resume">
+    <div class="container">
+      <div class="section-label reveal">My Journey</div>
+      <h2 class="section-title reveal">Education &amp; <span class="accent">Resume</span></h2>
+
+      <div class="resume-grid">
+        <!-- Timeline -->
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="tl-year">2022 – Present</span>
+              <h3 class="tl-title">B.Tech in Computer Science</h3>
+              <p class="tl-org">Your University Name, India</p>
+              <p class="tl-desc">Focusing on DSA, OOP, OS, DBMS, and software development fundamentals.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="tl-year">2020 – 2022</span>
+              <h3 class="tl-title">Higher Secondary (Class XII)</h3>
+              <p class="tl-org">Your School Name, India</p>
+              <p class="tl-desc">Science stream with Computer Science — that's where the bug was planted 🐛.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="tl-year">2024 – Now</span>
+              <h3 class="tl-title">Self-Learning: DSA &amp; Open Source</h3>
+              <p class="tl-org">Online (LeetCode, GFG, YouTube)</p>
+              <p class="tl-desc">Solving 100+ problems, contributing to GitHub, building real-world projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download card -->
+        <div class="resume-download reveal delay-2">
+          <div class="download-card">
+            <div class="download-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <h3>Aryan_Ojha_Resume.pdf</h3>
+            <p>Contains my full education, skills, projects, and experience overview.</p>
+            <a href="assets/resume.pdf" download class="btn btn-primary btn-full">
+              <i data-lucide="download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Let's Talk</div>
+      <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub reveal">Have a project, opportunity, or just want to say hi? My inbox is always open.</p>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:aryan.ojha@email.com" class="contact-value">aryan.ojha@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">India 🇮🇳</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal delay-2">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Ravi Kumar" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="ravi@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Hi Aryan, I'd love to connect about…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i data-lucide="send"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </p>
+          </form>
+        </div>
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © 2025 <strong>Aryan Ojha</strong>. Crafted with ❤️ &amp; lots of ☕
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i data-lucide="arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
