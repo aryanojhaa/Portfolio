@@ -369,15 +369,25 @@ h1, h2, h3 {
   align-items: center;
   gap: 1rem;
 }
-
 .avatar-ring {
-  width: 200px; height: 200px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), #6366f1);
   padding: 4px;
   box-shadow: 0 12px 40px var(--accent-glow);
   animation: float 4s ease-in-out infinite;
+
+  overflow: hidden; /* ✅ THIS FIXES IT */
 }
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* ✅ keeps image inside circle */
+  border-radius: 50%;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-10px); }
@@ -1055,4 +1065,27 @@ a.contact-value:hover { color: var(--accent); }
   .skills-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; align-items: center; }
   .btn { justify-content: center; width: 100%; max-width: 280px; }
+}
+
+.footer-socials a {
+  font-size: 1.5rem;
+  color: #e85d26;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ff7c4a; /* darker orange */
+  transform: translateY(-3px);
+}
+
+.leetcode-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(56%) sepia(92%) saturate(1000%) hue-rotate(350deg);
+  transition: 0.3s ease;
+}
+
+.leetcode-icon:hover {
+  transform: scale(1.2);
 }
